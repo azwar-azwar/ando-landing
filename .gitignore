@@ -1,0 +1,9 @@
+# Referensi lokal, tidak ikut deploy maupun repo
+_reference/
+.claude/
+
+# macOS
+.DS_Store
+
+# Vercel CLI
+.vercel/

@@ -1,0 +1,925 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ando by Gamatek | Aplikasi Nusantara Donasi Online untuk Lembaga</title>
+  <meta name="description" content="Ando (Aplikasi Nusantara Donasi Online) adalah platform donasi white-label untuk yayasan dan lembaga filantropi: website donasi dengan brand sendiri, campaign, multi-payment, dan database donatur dalam satu dashboard. Mulai Rp600.000 per bulan.">
+  <meta name="theme-color" content="#4284FF">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ando by Gamatek">
+  <meta property="og:title" content="Ando by Gamatek | Aplikasi Nusantara Donasi Online">
+  <meta property="og:description" content="Bangun aset fundraising digital milik lembaga sendiri. Website donasi, campaign, multi-payment, dan data donatur dalam satu dashboard.">
+  <meta property="og:image" content="/assets/img/og-ando.jpg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="420">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/assets/brand/favicon-32.png" sizes="32x32">
+  <link rel="icon" href="/assets/brand/favicon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+  <link rel="preload" href="/assets/fonts/figtree-xms-huzqdcfdgfmm4s9dq.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/css/ando.css">
+  <script>(function(d){var c=d.classList;c.add('js');try{var s=sessionStorage,k='ando-cine',f=s.getItem(k);s.setItem(k,'1');if(!f&&!location.hash&&!matchMedia('(prefers-reduced-motion: reduce)').matches&&!(navigator.connection&&navigator.connection.saveData))c.add('cine-intro')}catch(e){}})(document.documentElement)</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M6 12h12"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1zM4 22v-7"/></symbol>
+    <symbol id="i-receipt" viewBox="0 0 24 24"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8M12 17.5v-11"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 0 0-16 0"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20M2 12h20"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83ZM22 17.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65M22 12.65l-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></symbol>
+    <symbol id="i-megaphone" viewBox="0 0 24 24"><path d="m3 11 18-5v12L3 14v-3zM11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M18 17V9M13 17V5M8 17v-3"/></symbol>
+    <symbol id="i-sliders" viewBox="0 0 24 24"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></symbol>
+    <symbol id="i-lifebuoy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="m4.93 4.93 4.24 4.24M14.83 9.17l4.24-4.24M14.83 14.83l4.24 4.24M9.17 14.83l-4.24 4.24"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 7.5v5M12 16.5h.01"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M12 22v-5M9 8V2M15 8V2M18 8v5a4 4 0 0 1-4 4h-4a4 4 0 0 1-4-4V8Z"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main">Langsung ke konten</a>
+
+<header class="site-header" id="header">
+  <div class="container">
+    <nav class="nav" id="nav" aria-label="Navigasi utama">
+      <a class="brand" href="#top" aria-label="Ando by Gamatek, kembali ke atas">
+        <img src="/assets/brand/ando-logo-color.svg" alt="Ando by Gamatek" width="119" height="34">
+        <img class="brand-light" src="/assets/brand/ando-logo-white.svg" alt="" width="119" height="34" aria-hidden="true">
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#platform">Fitur</a>
+        <a href="#ekosistem">Ekosistem</a>
+        <a href="#harga">Harga</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#contoh">Contoh</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-cta">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Buka menu">
+          <svg class="i i-menu" aria-hidden="true"><use href="#i-menu"/></svg>
+          <svg class="i i-close" aria-hidden="true"><use href="#i-x"/></svg>
+        </button>
+      </div>
+      <span class="nav-progress" aria-hidden="true"><i></i></span>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top" data-brand="0" data-step="1" aria-labelledby="hero-title">
+    <div class="hero-pin">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="hero-tag"><b>Ando</b>Aplikasi Nusantara Donasi Online</span>
+          <h1 class="h1" id="hero-title"><span class="cw" style="--w:0"><span>Bangun</span></span> <span class="cw" style="--w:1"><span>aset</span></span> <span class="cw" style="--w:2"><span>fundraising</span></span> <span class="cw" style="--w:3"><span>digital</span></span> <span class="accent"><span class="cw" style="--w:4"><span>milik</span></span> <span class="cw" style="--w:5"><span>lembaga</span></span> <span class="cw" style="--w:6"><span>sendiri.</span></span></span></h1>
+          <p class="lead">Mulai dari platform yang ringan. Tambahkan data, CRM terintegrasi, dan dukungan teknologi ketika organisasi Anda tumbuh.</p>
+          <div class="hero-price">
+            <strong>Mulai Rp600.000 / bulan</strong>
+            <span>Website donasi, campaign, dan database donatur sudah termasuk.</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20ingin%20menjadwalkan%20demo%20Ando%20untuk%20lembaga%20kami." target="_blank" rel="noopener">
+              <svg class="i i-fill" aria-hidden="true"><use href="#i-wa"/></svg>Jadwalkan Demo via WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="mailto:hi@gamatek.co.id?subject=Jadwalkan%20Demo%20Ando&amp;body=Halo%20Tim%20Gamatek%2C%0A%0ASaya%20ingin%20menjadwalkan%20demo%20Ando%20untuk%20lembaga%20kami.%0A%0ANama%20lembaga%3A%0AKontak%3A%0AKebutuhan%20singkat%3A%0A">
+              <svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Kirim Email
+            </a>
+          </div>
+        </div>
+
+        <div class="stage-col">
+          <p class="sr-only">Ilustrasi: dashboard admin Ando dan website donasi di ponsel. Saat halaman digulir, website berganti identitas lembaga, donasi baru masuk ke dashboard, dan notifikasi WhatsApp terkirim ke donatur.</p>
+          <div class="stage-box" aria-hidden="true">
+            <div class="stage">
+              <div class="stage-tilt">
+
+                <div class="m-dash">
+                  <aside class="m-side">
+                    <div class="m-org">
+                      <div data-b="0"><span class="m-mark" style="background:#0F8B8D">TB</span><b>Teduh<br>Bersama</b></div>
+                      <div data-b="1"><span class="m-mark" style="background:#B4632A">PP</span><b>Pundi<br>Pelosok</b></div>
+                      <div data-b="2"><span class="m-mark m-mark--ph">LOGO</span><b>Lembaga<br>Anda</b></div>
+                    </div>
+                    <ul class="m-nav">
+                      <li class="on"><i></i>Dashboard</li>
+                      <li><i></i>Report</li>
+                      <li class="m-cap">Program</li>
+                      <li><i></i>Campaign</li>
+                      <li><i></i>Fundraiser</li>
+                      <li class="m-cap">Donasi</li>
+                      <li><i></i>Transaksi</li>
+                      <li><i></i>Donatur</li>
+                      <li class="m-cap">Web</li>
+                      <li><i></i>Website</li>
+                      <li><i></i>Pengaturan</li>
+                    </ul>
+                  </aside>
+                  <div class="m-main">
+                    <div class="m-top"><h4>Dashboard</h4><span class="m-chip">Oktober 2026</span></div>
+                    <div class="m-kpis">
+                      <div class="m-kpi" data-kpi="total"><small>Donasi bulan ini</small><strong data-count="total">Rp 0</strong><em>+18,4% vs bulan lalu</em></div>
+                      <div class="m-kpi" data-kpi="trx"><small>Transaksi</small><strong data-count="trx">0</strong><em>Berhasil 96%</em></div>
+                      <div class="m-kpi" data-kpi="donor"><small>Donatur baru</small><strong data-count="donor">0</strong><em>Repeat 41%</em></div>
+                    </div>
+                    <div class="m-charts">
+                      <div class="m-card">
+                        <h5>Tren donasi mingguan</h5>
+                        <div class="m-bars">
+                          <span style="--h:34%"></span><span style="--h:46%"></span><span style="--h:40%"></span><span style="--h:58%"></span>
+                          <span style="--h:52%"></span><span style="--h:66%"></span><span style="--h:61%"></span><span style="--h:74%"></span>
+                          <span style="--h:70%"></span><span style="--h:82%"></span><span style="--h:88%"></span><span style="--h:100%"></span>
+                        </div>
+                      </div>
+                      <div class="m-card">
+                        <h5>Metode pembayaran</h5>
+                        <div class="m-donut-wrap">
+                          <div class="m-donut"></div>
+                          <ul class="m-legend">
+                            <li><i style="background:var(--blue)"></i>QRIS 46%</li>
+                            <li><i style="background:var(--blue-300)"></i>VA 32%</li>
+                            <li><i style="background:var(--blue-100)"></i>E-wallet 22%</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="m-rows">
+                      <div class="m-row m-row--head"><span>Donatur</span><span>Nominal</span><span>Metode</span><span>Status</span></div>
+                      <div class="m-row m-row--new"><span>Hamba Allah</span><span>Rp250.000</span><span>QRIS</span><span class="m-ok">Berhasil</span></div>
+                      <div class="m-row"><span>Rina Kusuma</span><span>Rp100.000</span><span>VA</span><span class="m-ok">Berhasil</span></div>
+                      <div class="m-row"><span>Ahmad Fauzi</span><span>Rp500.000</span><span>Transfer</span><span class="m-ok">Berhasil</span></div>
+                      <div class="m-row"><span>Dewi Anggraini</span><span>Rp50.000</span><span>E-wallet</span><span class="m-ok">Berhasil</span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="m-phone">
+                  <div class="m-screen">
+                    <span class="m-island"></span>
+
+                    <div class="m-brand" data-b="0" style="--bc:#0F8B8D;--bc2:#0A6466;--bt:#E3F3F3">
+                      <div class="m-status">09.41<span><i></i><i></i></span></div>
+                      <div class="m-url"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>donasi.teduhbersama.org</div>
+                      <div class="m-head"><span class="m-mark">TB</span><b>Teduh Bersama</b><span class="m-search"></span></div>
+                      <div class="m-banner"><b>Sumur bor untuk desa yang kekeringan</b><span>Donasi sekarang</span></div>
+                      <div class="m-cats"><div><i></i>Zakat</div><div><i></i>Sedekah</div><div><i></i>Wakaf</div><div><i></i>Lainnya</div></div>
+                      <div class="m-sec">Program pilihan</div>
+                      <div class="m-camp"><span class="m-thumb"></span><div><b>Air bersih untuk 120 keluarga di Dusun Wae</b><div class="m-prog"><i style="width:72%"></i></div><small>Terkumpul <b>Rp86.420.000</b></small></div></div>
+                      <div class="m-camp"><span class="m-thumb"></span><div><b>Renovasi mushola di pesisir</b><div class="m-prog"><i style="width:41%"></i></div><small>Terkumpul <b>Rp31.275.500</b></small></div></div>
+                      <div class="m-donate">Donasi Sekarang</div>
+                    </div>
+
+                    <div class="m-brand" data-b="1" style="--bc:#B4632A;--bc2:#7F4317;--bt:#F6ECE3">
+                      <div class="m-status">09.41<span><i></i><i></i></span></div>
+                      <div class="m-url"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>donasi.pundipelosok.id</div>
+                      <div class="m-head"><span class="m-mark">PP</span><b>Pundi Pelosok</b><span class="m-search"></span></div>
+                      <div class="m-banner"><b>Jembatan sekolah untuk anak pelosok</b><span>Bantu sekarang</span></div>
+                      <div class="m-cats"><div><i></i>Zakat</div><div><i></i>Pendidikan</div><div><i></i>Bencana</div><div><i></i>Lainnya</div></div>
+                      <div class="m-sec">Butuh bantuan segera</div>
+                      <div class="m-camp"><span class="m-thumb"></span><div><b>Tanggap darurat banjir bandang</b><div class="m-prog"><i style="width:84%"></i></div><small>Terkumpul <b>Rp122.600.000</b></small></div></div>
+                      <div class="m-camp"><span class="m-thumb"></span><div><b>Seragam dan buku untuk 300 siswa</b><div class="m-prog"><i style="width:55%"></i></div><small>Terkumpul <b>Rp48.150.000</b></small></div></div>
+                      <div class="m-donate">Donasi Sekarang</div>
+                    </div>
+
+                    <div class="m-brand" data-b="2" style="--bc:#4284FF;--bc2:#1B58F5;--bt:#EEF5FF">
+                      <div class="m-status">09.41<span><i></i><i></i></span></div>
+                      <div class="m-url"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>donasi.lembagaanda.org</div>
+                      <div class="m-head"><span class="m-mark m-mark--ph">LOGO</span><b>Lembaga Anda</b><span class="m-search"></span></div>
+                      <div class="m-banner"><b>Program unggulan lembaga Anda</b><span>Donasi sekarang</span></div>
+                      <div class="m-cats"><div><i></i>Zakat</div><div><i></i>Sedekah</div><div><i></i>Wakaf</div><div><i></i>Lainnya</div></div>
+                      <div class="m-sec">Program pilihan</div>
+                      <div class="m-camp"><span class="m-thumb"></span><div><b>Beasiswa santri penghafal Quran</b><div class="m-prog"><i style="width:62%"></i></div><small>Terkumpul <b>Rp64.300.000</b></small></div></div>
+                      <div class="m-camp"><span class="m-thumb"></span><div><b>Sedekah pangan setiap Jumat</b><div class="m-prog"><i style="width:35%"></i></div><small>Terkumpul <b>Rp18.750.000</b></small></div></div>
+                      <div class="m-donate">Donasi Sekarang</div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="m-toast m-toast--pay">
+                <span class="t-ic t-green"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span>
+                <span><b>Donasi berhasil</b>Hamba Allah, Rp250.000 via QRIS</span>
+              </div>
+              <div class="m-toast m-toast--donor">
+                <span class="t-ic t-blue"><svg class="i" aria-hidden="true"><use href="#i-database"/></svg></span>
+                <span><b>Donatur tercatat</b>Histori 3x donasi, segmen rutin</span>
+              </div>
+              <div class="m-toast m-toast--wa">
+                <span class="t-ic t-wa"><svg class="i i-fill" aria-hidden="true"><use href="#i-wa"/></svg></span>
+                <span><b>Notifikasi WhatsApp terkirim</b>Ucapan terima kasih dan akad</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps" aria-hidden="true">
+            <div class="steps-track"><i></i></div>
+            <ol>
+              <li data-s="1"><span>01</span>Tampil sebagai <b class="brand-name">Teduh Bersama</b></li>
+              <li data-s="2"><span>02</span>Donasi tercatat otomatis</li>
+              <li data-s="3"><span>03</span>Data donatur dan notifikasi</li>
+            </ol>
+          </div>
+        </div>
+        <div class="hero-spacer" aria-hidden="true"></div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><i></i>Gulir</div>
+    </div>
+  </section>
+
+  <!-- MENGAPA ANDO -->
+  <section class="section why" id="mengapa" aria-labelledby="why-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Mengapa Ando</p>
+        <h2 class="h2" id="why-title">Kemudahan plugin, keleluasaan custom build, <span class="accent">tanpa beban keduanya.</span></h2>
+        <p class="lead">Plugin donasi dan custom build sama-sama punya kelebihan, tetapi masing-masing menyimpan kendala yang sering baru muncul setelah program bergulir. Ando hadir untuk menjawabnya.</p>
+      </div>
+
+      <div class="why-flow" id="why-flow">
+        <div class="paths">
+          <article class="path" data-reveal style="--i:0" aria-labelledby="path-plugin">
+            <header class="path-head">
+              <span class="path-ic"><svg class="i" aria-hidden="true"><use href="#i-plug"/></svg></span>
+              <div><h3 class="h3" id="path-plugin">Plugin donasi</h3><span class="path-tag">Mudah dan terjangkau</span></div>
+            </header>
+            <p class="path-intro">Cepat dipasang untuk kebutuhan dasar, namun beberapa keterbatasan mulai terasa ketika program fundraising makin besar.</p>
+            <ul class="pains" aria-label="Kendala plugin donasi">
+            <li data-pair="p1"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Tetap butuh tenaga teknis</b>Pemasangan, pembaruan, dan kendala harian masih memerlukan orang yang memahami seluk-beluk website.</span></li>
+            <li data-pair="p2"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Tampilan terasa seperti template</b>Donatur sudah sering menjumpai tampilan serupa, sehingga karakter lembaga Anda sulit menonjol.</span></li>
+            <li data-pair="p3"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Kesiapan saat ramai belum pasti</b>Kestabilan halaman donasi bergantung pada hosting lembaga, dan sering diuji justru saat Ramadan atau tanggap bencana.</span></li>
+            <li data-pair="p4"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Ruang berkembang terbatas</b>Pengelolaan data donatur, alur kerja tim, dan integrasi dengan sistem lain sulit dikembangkan lebih jauh.</span></li>
+            </ul>
+          </article>
+          <article class="path" data-reveal style="--i:1" aria-labelledby="path-custom">
+            <header class="path-head">
+              <span class="path-ic"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg></span>
+              <div><h3 class="h3" id="path-custom">Custom build</h3><span class="path-tag">Leluasa sesuai kebutuhan</span></div>
+            </header>
+            <p class="path-intro">Bisa dirancang persis seperti yang diinginkan, namun investasi dan tanggung jawabnya terus berjalan setelah peluncuran.</p>
+            <ul class="pains" aria-label="Kendala custom build">
+            <li data-pair="c1"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Biaya besar, waktu panjang</b>Membangun dari nol menyerap anggaran yang tidak sedikit dan waktu berbulan-bulan sebelum donasi pertama diterima.</span></li>
+            <li data-pair="c2"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Biaya perawatan terus mengalir</b>Server, keamanan, pembaruan, dan perbaikan menjadi pengeluaran rutin yang kerap melampaui perkiraan awal.</span></li>
+            <li data-pair="c3"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Bergantung pada segelintir ahli</b>Banyak perubahan, termasuk yang tampak sederhana, perlu menunggu pengembang yang memahami kodenya, sehingga tim fundraising sulit bergerak cepat.</span></li>
+            <li data-pair="c4"><span class="pain-ic"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg></span><span><b>Rentan saat tim berganti</b>Ketika pengembang kunci berpindah, pengetahuan teknisnya ikut pergi dan lembaga berisiko kehilangan kendali atas sistemnya sendiri.</span></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="merge" aria-hidden="true"><i class="merge-l"></i><i class="merge-r"></i><i class="merge-stem"><b></b></i></div>
+
+        <article class="dona-card" data-reveal="scale" aria-labelledby="dona-card-title">
+          <header class="dona-head">
+            <div class="dona-name"><h3 id="dona-card-title"><img src="/assets/brand/ando-mark-light.svg" alt="" width="44" height="44">Ando</h3><span class="dona-tag">Pilihan paling ideal</span></div>
+            <p class="dona-statement">Praktis untuk memulai, leluasa untuk bertumbuh, dan dirawat tim kami, agar Anda fokus menjaga amanah donatur.</p>
+          </header>
+          <div class="dona-cols">
+            <div class="dona-col">
+              <p class="dona-col-title">Semudah plugin, tanpa batasannya</p>
+              <ul class="answers">
+              <li data-pair="p1" style="--i:0"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Tenang tanpa tim teknis</b>Kami menangani penyiapan dan pembaruan platform, sementara kendala harian bisa diserahkan ke layanan opsional Managed IT Support.</span></li>
+              <li data-pair="p2" style="--i:1"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Tampil dengan identitas sendiri</b>Website memakai logo, warna, dan domain lembaga Anda, sehingga yang diingat donatur adalah nama Anda.</span></li>
+              <li data-pair="p3" style="--i:2"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Momen ramai tanpa urusan server</b>Halaman donasi berjalan di platform yang dikelola terpusat, bukan di hosting lembaga, sehingga Anda tidak perlu menyiapkan server sendiri menjelang Ramadan atau tanggap bencana.</span></li>
+              <li data-pair="p4" style="--i:3"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Data terhubung, siap dikembangkan</b>Campaign, donasi, dan riwayat donatur terkelola di satu dashboard yang dapat diperluas dengan add-on Data Warehouse dan Sistem CRM Terintegrasi saat dibutuhkan.</span></li>
+              </ul>
+            </div>
+            <div class="dona-col">
+              <p class="dona-col-title">Leluasa bertumbuh, tanpa beban custom build</p>
+              <ul class="answers">
+              <li data-pair="c1" style="--i:0"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Hemat biaya, hemat waktu</b>Platform siap pakai mulai Rp600 ribu per bulan, ditambah penyiapan sekali bayar Rp1,5 juta, tanpa menunggu sistem dibangun dari nol.</span></li>
+              <li data-pair="c2" style="--i:1"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Perawatan sudah termasuk</b>Pemeliharaan platform inti menjadi bagian dari langganan, sehingga anggaran bulanan lebih jelas dan mudah direncanakan.</span></li>
+              <li data-pair="c3" style="--i:2"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Cukup dikelola tim Anda</b>Dengan satu dashboard dan pelatihan admin, tim fundraising bisa menjalankan campaign tanpa menunggu pengembang.</span></li>
+              <li data-pair="c4" style="--i:3"><span class="ans-ic"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg></span><span><b>Tetap utuh saat tim berganti</b>Platform dijaga tim kami, bukan satu orang, sehingga sistem dan data donatur tidak ikut pergi bersama staf.</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="why-note" data-reveal>Tidak perlu lagi memilih antara praktis dan leluasa. Mulai dari yang dibutuhkan hari ini, lalu tambahkan kapabilitas seiring perkembangan lembaga, tanpa berpindah sistem.</p>
+    </div>
+  </section>
+
+  <!-- KEPEMILIKAN -->
+  <section class="section section--gray" id="kepemilikan" aria-labelledby="own-title">
+    <div class="container own">
+      <div class="own-head" data-reveal>
+        <p class="eyebrow">Kendali penuh</p>
+        <h2 class="h2" id="own-title">Brand Anda. Data Anda. <span class="accent">Hubungan donatur Anda.</span></h2>
+        <p class="lead">Ando dirancang agar lembaga memiliki kontrol lebih besar atas pengalaman donasi dan data yang dihasilkan.</p>
+        <p class="own-foot">Platform fundraising bisa dimulai sederhana, lalu berkembang menjadi infrastruktur.</p>
+      </div>
+      <ol class="own-list" style="list-style:none;padding:0;margin:0">
+        <li data-own>
+          <span class="own-n">01</span>
+          <div><p class="eyebrow">Own brand</p><h3 class="h3">Website dengan identitas lembaga</h3><p>Website fundraising tampil dengan nama, logo, dan domain lembaga, bukan sebagai halaman di marketplace pihak ketiga.</p></div>
+        </li>
+        <li data-own>
+          <span class="own-n">02</span>
+          <div><p class="eyebrow">Own donor data</p><h3 class="h3">Data donatur tetap milik lembaga</h3><p>Profil donatur dan histori transaksi dikelola untuk kebutuhan retensi dan pengembangan relasi.</p></div>
+        </li>
+        <li data-own>
+          <span class="own-n">03</span>
+          <div><p class="eyebrow">Own campaign</p><h3 class="h3">Campaign sesuai prioritas Anda</h3><p>Kelola campaign, update program, fundraiser, dan target sesuai prioritas lembaga.</p></div>
+        </li>
+        <li data-own>
+          <span class="own-n">04</span>
+          <div><p class="eyebrow">Own growth engine</p><h3 class="h3">Mesin pertumbuhan yang bisa ditambah</h3><p>Hubungkan data warehouse, dashboard intelligence, dan CRM terintegrasi untuk komunikasi otomatis saat dibutuhkan.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- CORE PLATFORM -->
+  <section class="section" id="platform" aria-labelledby="core-title">
+    <div class="container">
+      <div class="core-top">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Core platform</p>
+          <h2 class="h2" id="core-title">Semua aktivitas inti fundraising, <span class="accent">dalam satu dashboard.</span></h2>
+          <p class="lead">Kelola campaign, transaksi, donatur, website, dan konfigurasi dasar tanpa membangun sistem dari nol.</p>
+        </div>
+      </div>
+      <div class="core-grid">
+        <figure class="shot" data-reveal="left">
+          <img class="shot-laptop" src="/assets/img/dashboard-program.jpg" alt="Halaman Daftar Program di dashboard admin Ando: status publikasi, dana tercapai, dan tanggal setiap campaign" width="1600" height="1005" loading="lazy" decoding="async">
+          <div class="shot-phone" data-reveal style="--i:3">
+            <div><img src="/assets/img/donasi-instruksi.jpg" alt="Halaman instruksi pembayaran untuk donatur dengan nomor rekening, nominal unik, dan kode donasi" width="610" height="1269" loading="lazy" decoding="async"></div>
+          </div>
+          <figcaption class="shot-cap"><span class="dot"></span>Tampilan asli dashboard dan halaman donasi</figcaption>
+        </figure>
+        <div class="feat-list">
+          <div class="feat" data-reveal style="--i:0">
+            <span class="f-ic"><svg class="i" aria-hidden="true"><use href="#i-flag"/></svg></span>
+            <h3>Campaign &amp; update</h3>
+            <p>Kelola program, target, konten, update, dan status campaign.</p>
+          </div>
+          <div class="feat" data-reveal style="--i:1">
+            <span class="f-ic"><svg class="i" aria-hidden="true"><use href="#i-receipt"/></svg></span>
+            <h3>Donasi &amp; autoclaim</h3>
+            <p>Pantau donasi masuk dan rapikan pencatatan melalui kode account per kategori.</p>
+          </div>
+          <div class="feat" data-reveal style="--i:2">
+            <span class="f-ic"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <h3>Data donatur</h3>
+            <p>Simpan profil donatur, histori donasi, dan aktivitas untuk pengembangan relasi.</p>
+          </div>
+          <div class="feat" data-reveal style="--i:3">
+            <span class="f-ic"><svg class="i" aria-hidden="true"><use href="#i-globe"/></svg></span>
+            <h3>Website white-label</h3>
+            <p>Atur tampilan dan identitas website sesuai brand lembaga, lengkap dengan domain sendiri.</p>
+          </div>
+          <div class="feat" data-reveal style="--i:4">
+            <span class="f-ic"><svg class="i" aria-hidden="true"><use href="#i-card"/></svg></span>
+            <h3>Multi-payment</h3>
+            <p>Hubungkan metode pembayaran melalui provider yang didukung.</p>
+          </div>
+          <div class="feat" data-reveal style="--i:5">
+            <span class="f-ic"><svg class="i" aria-hidden="true"><use href="#i-activity"/></svg></span>
+            <h3>Tracking</h3>
+            <p>Siapkan Meta Pixel dan Google Tag untuk mengukur performa kampanye digital.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EKOSISTEM -->
+  <section class="section eco" id="ekosistem" aria-labelledby="eco-title">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Ekosistem</p>
+        <h2 class="h2" id="eco-title">Satu pusat data, banyak kapabilitas tambahan.</h2>
+        <p class="lead">Ando menjadi pusat transaksi dan data. Layanan tambahan bekerja di atas data yang sama, jadi tidak ada lagi data donatur yang tercecer di banyak tempat.</p>
+      </div>
+      <div class="flow" id="flow">
+        <div class="flow-line" aria-hidden="true"><i></i><b></b></div>
+        <div class="node" style="--i:0">
+          <span class="node-dot"><svg class="i" aria-hidden="true"><use href="#i-user"/></svg></span>
+          <small>01</small><h3>Donor</h3><p>Website dan landing page</p>
+        </div>
+        <div class="node" style="--i:1">
+          <span class="node-dot"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span>
+          <small>02</small><h3>Ando Core</h3><p>Campaign, donasi, data</p>
+        </div>
+        <div class="node" style="--i:2">
+          <span class="node-dot"><svg class="i" aria-hidden="true"><use href="#i-database"/></svg></span>
+          <small>03</small><h3>Data layer</h3><p>Warehouse, segmentasi, BI</p>
+        </div>
+        <div class="node" style="--i:3">
+          <span class="node-dot"><svg class="i" aria-hidden="true"><use href="#i-message"/></svg></span>
+          <small>04</small><h3>CRM terintegrasi</h3><p>WhatsApp, SMS, email</p>
+        </div>
+        <div class="node" style="--i:4">
+          <span class="node-dot"><svg class="i" aria-hidden="true"><use href="#i-megaphone"/></svg></span>
+          <small>05</small><h3>Action</h3><p>Retain, upsell, report</p>
+        </div>
+      </div>
+      <div class="eco-foot" data-reveal>
+        <p>Mulai dengan Core Platform saja. Aktifkan layer data, CRM terintegrasi, atau support ketika benar-benar dibutuhkan.</p>
+        <span class="badge-light">Modular by design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- HARGA -->
+  <section class="section" id="harga" aria-labelledby="price-title">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Harga</p>
+        <h2 class="h2" id="price-title">Harga transparan, <span class="accent">sesuai tahap lembaga.</span></h2>
+        <p class="lead">Semua paket menggunakan model white-label. Bayar bulanan, tingkatkan paket ketika fundraising Anda makin aktif.</p>
+      </div>
+
+      <div class="price-grid">
+        <article class="plan" data-reveal style="--i:0">
+          <p class="plan-name">Starter</p>
+          <p class="plan-desc">Untuk lembaga yang ingin mulai fundraising digital.</p>
+          <p class="plan-price"><strong>Rp600rb</strong><span>/ bulan</span></p>
+          <a class="btn btn--ghost btn--block" href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20tertarik%20dengan%20Ando%20paket%20Starter.%20Boleh%20minta%20info%20lebih%20lanjut%3F" target="_blank" rel="noopener">Pilih Starter</a>
+          <ul>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Website white-label</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Branding lembaga dan custom domain</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Multi-payment</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Campaign management</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Database donatur</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Standard support</li>
+          </ul>
+        </article>
+        <article class="plan plan--pop" data-reveal style="--i:1">
+          <span class="plan-badge">Paling banyak dipilih</span>
+          <p class="plan-name">Pro</p>
+          <p class="plan-desc">Untuk fundraising yang sudah aktif dan rutin.</p>
+          <p class="plan-price"><strong>Rp975rb</strong><span>/ bulan</span></p>
+          <a class="btn btn--primary btn--block" href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20tertarik%20dengan%20Ando%20paket%20Pro.%20Boleh%20minta%20info%20lebih%20lanjut%3F" target="_blank" rel="noopener">Pilih Pro</a>
+          <ul>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Semua fitur Starter</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Fundraiser management</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Autoclaim donasi</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Notifikasi WhatsApp &amp; email</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Integrasi Meta Pixel / Google Tag</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Standard support</li>
+          </ul>
+        </article>
+        <article class="plan" data-reveal style="--i:2">
+          <p class="plan-name">Growth</p>
+          <p class="plan-desc">Untuk lembaga yang ingin scale lebih terstruktur.</p>
+          <p class="plan-price"><strong>Rp1,5jt</strong><span>/ bulan</span></p>
+          <a class="btn btn--ghost btn--block" href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20tertarik%20dengan%20Ando%20paket%20Growth.%20Boleh%20minta%20info%20lebih%20lanjut%3F" target="_blank" rel="noopener">Pilih Growth</a>
+          <ul>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Semua fitur Pro</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Advanced configuration</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Advanced dashboard</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Priority support</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Quarterly optimization review</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Siap untuk add-on data &amp; CRM</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="price-notes">
+        <p class="note" data-reveal style="--i:0"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span><b>Setup sekali bayar Rp1.500.000</b> berlaku untuk semua paket: implementasi identitas lembaga, domain, payment gateway, testing, go-live, dan training admin.</span></p>
+        <p class="note" data-reveal style="--i:1"><svg class="i" aria-hidden="true"><use href="#i-info"/></svg><span><b>Biaya pihak ketiga terpisah.</b> Payment gateway dan usage komunikasi ditagihkan sesuai pemakaian. Fair Usage Policy berlaku. Custom development, migrasi data, dan integrasi khusus di luar subscription.</span></p>
+      </div>
+
+      <details class="compare" data-reveal>
+        <summary>Bandingkan semua fitur <span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th scope="col">Fitur</th><th scope="col">Starter</th><th scope="col" class="col-pop">Pro</th><th scope="col">Growth</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>White-label website</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Branding lembaga</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Custom domain</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Multi-payment</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Campaign management</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Database donatur</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Basic dashboard</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Update program / campaign</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Donasi anonim</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Multiple admin users</td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Fundraiser management</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Autoclaim donasi</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Account code per kategori</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Notifikasi donasi berhasil / akad via WhatsApp &amp; email</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Notifikasi donasi gagal via WhatsApp &amp; email</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Meta Pixel / Google Tag integration</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Program khusus / emergency campaign</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Home slider / campaign highlight</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Priority support</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Priority configuration</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+              <tr><td>Quarterly technical / platform review</td><td><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td class="col-pop"><span class="no"><svg class="i" aria-label="Tidak termasuk"><use href="#i-minus"/></svg></span></td><td><span class="yes"><svg class="i" aria-label="Termasuk"><use href="#i-check"/></svg></span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- MANAGED SERVICES -->
+  <section class="section section--gray" id="layanan" aria-labelledby="svc-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Managed services</p>
+        <h2 class="h2" id="svc-title">Tidak punya tim IT? Tetap bisa beroperasi <span class="accent">seperti punya tim teknis.</span></h2>
+        <p class="lead">Biaya platform dipisahkan dari layanan operasional, jadi lembaga hanya membayar support yang benar-benar dibutuhkan.</p>
+      </div>
+      <div class="svc-grid">
+        <article class="svc" data-reveal style="--i:0">
+          <div class="svc-top">
+            <span class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-sliders"/></svg></span>
+            <span class="pill-tag pill-tag--must">Wajib</span>
+          </div>
+          <p class="eyebrow">Sekali bayar</p>
+          <h3 class="h3">Setup &amp; Configuration</h3>
+          <p class="svc-price">Rp1.500.000</p>
+          <ul>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Implementasi logo, warna, dan identitas yayasan</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Konfigurasi domain atau subdomain</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Setup payment gateway dan multi-payment yang didukung</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Basic configuration, testing, dan go-live</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>1x training admin</li>
+          </ul>
+        </article>
+        <article class="svc" data-reveal style="--i:1">
+          <div class="svc-top">
+            <span class="svc-ic"><svg class="i" aria-hidden="true"><use href="#i-lifebuoy"/></svg></span>
+            <span class="pill-tag pill-tag--opt">Opsional</span>
+          </div>
+          <p class="eyebrow">Bulanan</p>
+          <h3 class="h3">Managed IT Support</h3>
+          <p class="svc-price">Rp1.500.000 <span>/ bulan</span></p>
+          <ul>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Troubleshooting Ando dan integrasi terkait</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Pengelolaan user dan akses, domain, payment, tracking</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Investigasi notifikasi atau transaksi bermasalah</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Koordinasi teknis dengan provider terkait</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Health check dan konsultasi teknis ringan</li>
+            <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Fair use hingga 8 tiket atau sekitar 5 jam per bulan</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADD-ONS -->
+  <section class="section" id="addon" aria-labelledby="addon-title">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Layanan tambahan</p>
+        <h2 class="h2" id="addon-title">Aktifkan kapabilitas baru <span class="accent">saat lembaga siap.</span></h2>
+        <p class="lead">Semua add-on bekerja di atas data yang sama dengan Ando Core. Pilih yang relevan dengan tahap fundraising Anda sekarang.</p>
+      </div>
+
+      <div class="tabs" data-reveal>
+        <div class="tablist" role="tablist" aria-label="Layanan tambahan">
+          <button class="tab" role="tab" id="tab-data" aria-controls="panel-data" aria-selected="true">Data Intelligence</button>
+          <button class="tab" role="tab" id="tab-crm" aria-controls="panel-crm" aria-selected="false" tabindex="-1">Data Warehouse</button>
+          <button class="tab" role="tab" id="tab-aiwa" aria-controls="panel-aiwa" aria-selected="false" tabindex="-1">Sistem CRM Terintegrasi</button>
+          <button class="tab" role="tab" id="tab-dev" aria-controls="panel-dev" aria-selected="false" tabindex="-1">Custom Development</button>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-data" aria-labelledby="tab-data" tabindex="0">
+          <div class="panel-head">
+            <h3 class="h3">Dari data transaksi menjadi keputusan fundraising.</h3>
+            <p>Dashboard dibangun dengan Looker Studio atau Metabase, disesuaikan dengan kompleksitas data dan kebutuhan pengambilan keputusan.</p>
+          </div>
+          <div class="pkg-grid">
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">1</span></div>
+              <h4>Basic Dashboard</h4>
+              <p class="pkg-price">Rp3jt setup<small>+ Rp750rb / bulan</small></p>
+              <ul><li>Donation trend</li><li>New vs repeat donor</li><li>Rata-rata donasi</li><li>Performa campaign</li><li>Metode pembayaran</li></ul>
+            </div>
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">2</span></div>
+              <h4>Pro Intelligence</h4>
+              <p class="pkg-price">Rp6jt setup<small>+ Rp1,5jt / bulan</small></p>
+              <ul><li>Custom dashboard</li><li>Otomatis dan real time</li><li>Retention dan cohort</li><li>Channel attribution</li><li>Segmentation insight</li></ul>
+            </div>
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">3</span><span class="pill-tag pill-tag--opt">Opsional</span></div>
+              <h4>Analytics Advisory</h4>
+              <p class="pkg-price">Rp1,5–3jt<small>per bulan</small></p>
+              <ul><li>Monthly insight review</li><li>3–5 temuan utama</li><li>Rekomendasi aksi</li><li>Peluang campaign</li><li>Management readout</li></ul>
+            </div>
+          </div>
+          <p class="panel-quote">Tujuan akhirnya bukan sekadar memiliki dashboard, tetapi membuat tim tahu apa yang harus dilakukan berikutnya.</p>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-crm" aria-labelledby="tab-crm" tabindex="0" hidden>
+          <div class="panel-head">
+            <h3 class="h3">Satukan data donatur agar komunikasi dan retensi lebih presisi.</h3>
+            <p>Data dari Ando dan sumber lain dikonsolidasikan menjadi donor master yang siap dianalisis dan diaktivasi.</p>
+          </div>
+          <div class="mini-flow">
+            <div class="mini-stack">
+              <div class="mf"><small>Ando</small><b>Donasi &amp; campaign</b></div>
+              <div class="mf"><small>Eksternal</small><b>Spreadsheet / sumber lain</b></div>
+            </div>
+            <span class="mf-arrow" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <div class="mf mf--hl"><small>Data warehouse</small><b>Unified donor data</b></div>
+            <span class="mf-arrow" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <div class="mf"><small>Segmentasi</small><b>Lifecycle &amp; RFM</b></div>
+            <span class="mf-arrow" aria-hidden="true"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+            <div class="mf"><small>Aktivasi</small><b>CRM terintegrasi / campaign</b></div>
+          </div>
+          <div class="pkg-grid pkg-grid--2">
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">1</span></div>
+              <h4>Warehouse Starter</h4>
+              <p class="pkg-price">Rp3jt setup<small>+ Rp750rb / bulan</small></p>
+              <ul><li>Donor master</li><li>Normalisasi data</li><li>Unified ID</li><li>Histori transaksi</li><li>Segmentasi dasar</li></ul>
+            </div>
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">2</span></div>
+              <h4>Warehouse Growth</h4>
+              <p class="pkg-price">Rp6jt setup<small>+ Rp750rb / bulan</small></p>
+              <ul><li>Multi sumber data</li><li>Automated ETL</li><li>Lifecycle dan RFM</li><li>Donor scoring</li><li>Segmentasi lanjutan</li></ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-aiwa" aria-labelledby="tab-aiwa" tabindex="0" hidden>
+          <div class="panel-head">
+            <h3 class="h3">Bukan sekadar broadcast. Komunikasi berbasis data donatur.</h3>
+            <p>Gunakan WhatsApp resmi untuk broadcast, notifikasi transaksi, akad, laporan, update campaign, dan komunikasi tersegmentasi.</p>
+          </div>
+          <div class="aiwa">
+            <div class="aiwa-card">
+              <ul>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Official WhatsApp broadcast</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Notifikasi transaksi dan akad</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Update campaign dan laporan dampak</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Audiens tersegmentasi dari data donatur</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>WhatsApp workflow</li>
+                <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Variabel pesan personal</li>
+              </ul>
+              <div class="aiwa-price"><strong>Rp525rb</strong><span>/ bulan</span><em>Minimal 3 bulan</em></div>
+              <p class="panel-foot">Biaya usage Meta / BSP, SMS, email, atau provider pihak ketiga ditagihkan terpisah sesuai penggunaan.</p>
+            </div>
+            <div class="chat" id="chat" aria-label="Contoh pesan WhatsApp dengan variabel personal">
+              <div class="chat-top"><span class="av">LA</span><div><b>Lembaga Anda</b><small>Akun bisnis resmi</small></div></div>
+              <p class="bubble js-type">Assalamu'alaikum <span class="var">Bapak Ahmad</span>, donasi <span class="var">Rp250.000</span> untuk program <span class="var">Sumur Bor Dusun Wae</span> sudah kami terima. Jazakallahu khairan.<time>09.42</time></p>
+              <p class="bubble js-type">Update: sumur sudah mengalir dan dipakai <span class="var">120 keluarga</span>. Laporan lengkap ada di tautan berikut.<time>14 hari kemudian</time></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel" role="tabpanel" id="panel-dev" aria-labelledby="tab-dev" tabindex="0" hidden>
+          <div class="panel-head">
+            <h3 class="h3">Butuh fitur yang belum tersedia? Kembangkan tanpa mengubah core platform.</h3>
+            <p>Setiap request dinilai berdasarkan kompleksitas, dampak arsitektur, integrasi, dan effort engineering.</p>
+          </div>
+          <div class="pkg-grid">
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">1</span></div>
+              <h4>Simple Enhancement</h4>
+              <p class="pkg-price">Rp1,5–3jt<small>sekitar 1–3 man-days</small></p>
+              <ul><li>Field atau filter tambahan</li><li>Minor form dan export</li><li>Custom status atau report</li></ul>
+            </div>
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">2</span></div>
+              <h4>Advanced Feature</h4>
+              <p class="pkg-price">Rp3–7,5jt<small>sekitar 4–10 man-days</small></p>
+              <ul><li>Modul atau workflow baru</li><li>Simple API dan automation</li><li>Perubahan database</li></ul>
+            </div>
+            <div class="pkg">
+              <div class="pkg-top"><span class="pkg-n">3</span></div>
+              <h4>Complex / Strategic</h4>
+              <p class="pkg-price">Mulai Rp7,5jt<small>perlu technical assessment</small></p>
+              <ul><li>Integrasi multi-sistem</li><li>Perubahan arsitektur</li><li>Security dan high-volume logic</li></ul>
+            </div>
+          </div>
+          <p class="panel-foot">Kategori Complex / Strategic tidak memiliki batas maksimum. Quotation mengikuti hasil technical assessment dan scope final.</p>
+        </div>
+      </div>
+
+      <p style="margin-top:32px" data-reveal>
+        <a class="link-arrow" href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20ingin%20konsultasi%20layanan%20tambahan%20Ando%20%28dashboard%20data%2C%20data%20warehouse%2C%20Sistem%20CRM%20Terintegrasi%2C%20atau%20custom%20development%29." target="_blank" rel="noopener">Konsultasikan kebutuhan add-on <svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTOH -->
+  <section class="section section--gray" id="contoh" aria-labelledby="show-title">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Contoh tampilan</p>
+        <h2 class="h2" id="show-title">Satu platform, <span class="accent">identitas tiap lembaga berbeda.</span></h2>
+        <p class="lead">Logo, warna, domain, dan program mengikuti lembaga masing-masing. Berikut tiga contoh tema yang bisa disesuaikan dengan brand Anda.</p>
+      </div>
+      <div class="show-grid" id="show-grid">
+        <article class="show" data-reveal style="--i:0" data-speed="0.6">
+          <div class="show-phone" role="img" aria-label="Ilustrasi website donasi Teduh Bersama di ponsel: banner program, kategori, dan daftar campaign"><div>
+            <div class="show-mock" aria-hidden="true"><div class="m-screen"><span class="m-island"></span>
+              <div class="m-brand" style="--bc:#0F8B8D;--bc2:#0A6466;--bt:#E3F3F3">
+                <div class="m-status">09.41<span><i></i><i></i></span></div>
+                <div class="m-url"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>donasi.teduhbersama.org</div>
+                <div class="m-head"><span class="m-mark">TB</span><b>Teduh Bersama</b><span class="m-search"></span></div>
+                <div class="m-banner"><b>Sumur bor untuk desa yang kekeringan</b><span>Donasi sekarang</span></div>
+                <div class="m-cats"><div><i></i>Zakat</div><div><i></i>Sedekah</div><div><i></i>Wakaf</div><div><i></i>Lainnya</div></div>
+                <div class="m-sec">Program pilihan</div>
+                <div class="m-camp"><span class="m-thumb"></span><div><b>Air bersih untuk 120 keluarga di Dusun Wae</b><div class="m-prog"><i style="width:72%"></i></div><small>Terkumpul <b>Rp86.420.000</b></small></div></div><div class="m-camp"><span class="m-thumb"></span><div><b>Renovasi mushola di pesisir</b><div class="m-prog"><i style="width:41%"></i></div><small>Terkumpul <b>Rp31.275.500</b></small></div></div>
+                <div class="m-donate">Donasi Sekarang</div>
+              </div>
+            </div></div>
+          </div></div>
+          <h3>Teduh Bersama</h3>
+          <p>Tema teal untuk program air bersih, masjid, dan zakat</p>
+          <span class="show-domain">donasi.teduhbersama.org</span>
+        </article>
+        <article class="show" data-reveal style="--i:1" data-speed="-0.4">
+          <div class="show-phone" role="img" aria-label="Ilustrasi website donasi Pundi Pelosok di ponsel: banner program, kategori, dan daftar campaign"><div>
+            <div class="show-mock" aria-hidden="true"><div class="m-screen"><span class="m-island"></span>
+              <div class="m-brand" style="--bc:#B4632A;--bc2:#7F4317;--bt:#F6ECE3">
+                <div class="m-status">09.41<span><i></i><i></i></span></div>
+                <div class="m-url"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>donasi.pundipelosok.id</div>
+                <div class="m-head"><span class="m-mark">PP</span><b>Pundi Pelosok</b><span class="m-search"></span></div>
+                <div class="m-banner"><b>Jembatan sekolah untuk anak pelosok</b><span>Bantu sekarang</span></div>
+                <div class="m-cats"><div><i></i>Zakat</div><div><i></i>Pendidikan</div><div><i></i>Bencana</div><div><i></i>Lainnya</div></div>
+                <div class="m-sec">Butuh bantuan segera</div>
+                <div class="m-camp"><span class="m-thumb"></span><div><b>Seragam dan buku untuk 300 siswa</b><div class="m-prog"><i style="width:55%"></i></div><small>Terkumpul <b>Rp48.150.000</b></small></div></div><div class="m-camp"><span class="m-thumb"></span><div><b>Guru honorer di pedalaman</b><div class="m-prog"><i style="width:38%"></i></div><small>Terkumpul <b>Rp22.640.000</b></small></div></div>
+                <div class="m-donate">Donasi Sekarang</div>
+              </div>
+            </div></div>
+          </div></div>
+          <h3>Pundi Pelosok</h3>
+          <p>Tema hangat untuk program pendidikan anak</p>
+          <span class="show-domain">donasi.pundipelosok.id</span>
+        </article>
+        <article class="show" data-reveal style="--i:2" data-speed="0.6">
+          <div class="show-phone" role="img" aria-label="Ilustrasi website donasi Siaga Peduli di ponsel: banner program, kategori, dan daftar campaign"><div>
+            <div class="show-mock" aria-hidden="true"><div class="m-screen"><span class="m-island"></span>
+              <div class="m-brand" style="--bc:#C2410C;--bc2:#9A3412;--bt:#FDEEE6">
+                <div class="m-status">09.41<span><i></i><i></i></span></div>
+                <div class="m-url"><svg class="i" aria-hidden="true"><use href="#i-lock"/></svg>donasi.siagapeduli.org</div>
+                <div class="m-head"><span class="m-mark">SP</span><b>Siaga Peduli</b><span class="m-search"></span></div>
+                <div class="m-banner"><b>Bantu warga terdampak banjir</b><span>Salurkan bantuan</span></div>
+                <div class="m-cats"><div><i></i>Bencana</div><div><i></i>Pangan</div><div><i></i>Kesehatan</div><div><i></i>Lainnya</div></div>
+                <div class="m-sec">Tanggap darurat</div>
+                <div class="m-camp"><span class="m-thumb"></span><div><b>Paket pangan untuk 500 keluarga</b><div class="m-prog"><i style="width:68%"></i></div><small>Terkumpul <b>Rp73.410.000</b></small></div></div><div class="m-camp"><span class="m-thumb"></span><div><b>Hunian sementara pengungsi</b><div class="m-prog"><i style="width:44%"></i></div><small>Terkumpul <b>Rp39.880.000</b></small></div></div>
+                <div class="m-donate">Donasi Sekarang</div>
+              </div>
+            </div></div>
+          </div></div>
+          <h3>Siaga Peduli</h3>
+          <p>Tema siaga untuk tanggap bencana dan kemanusiaan</p>
+          <span class="show-domain">donasi.siagapeduli.org</span>
+        </article>
+      </div>
+      <p class="show-note">Ilustrasi tampilan dengan nama lembaga fiktif. Saat sesi demo, tim kami menunjukkan platform yang sedang berjalan.</p>
+    </div>
+  </section>
+
+  <!-- KLIEN -->
+  <section class="section" id="klien" aria-labelledby="client-title">
+    <div class="container">
+      <div class="section-head section-head--center" data-reveal>
+        <p class="eyebrow">Dipercaya lembaga</p>
+        <h2 class="h2" id="client-title">Tim di balik Ando telah mendampingi <span class="accent">berbagai lembaga kebaikan.</span></h2>
+        <p class="lead">Sebelum Ando hadir, Gamatek sudah membantu yayasan dan lembaga zakat membangun kehadiran digital mereka.</p>
+      </div>
+      <ul class="clients" aria-label="Lembaga yang bekerja sama dengan Gamatek">
+        <li data-reveal style="--i:0"><img src="/assets/img/clients/teman-kebaikan.svg" alt="Teman Kebaikan" width="236" height="100" loading="lazy" decoding="async"></li>
+        <li data-reveal style="--i:1"><img src="/assets/img/clients/jampang-peduli.svg" alt="Jampang Peduli" width="236" height="100" loading="lazy" decoding="async"></li>
+        <li data-reveal style="--i:2"><img src="/assets/img/clients/lazissu.svg" alt="LAZISSU" width="236" height="100" loading="lazy" decoding="async"></li>
+        <li data-reveal style="--i:3"><img src="/assets/img/clients/cahaya-peduli-islam.svg" alt="Cahaya Peduli Islam" width="236" height="100" loading="lazy" decoding="async"></li>
+        <li data-reveal style="--i:4"><img src="/assets/img/clients/baitul-mal-raheela.svg" alt="Baitul Mal Raheela" width="236" height="100" loading="lazy" decoding="async"></li>
+        <li data-reveal style="--i:5"><img src="/assets/img/clients/tebar-kebaikan.svg" alt="Semangat Tebar Kebaikan" width="236" height="100" loading="lazy" decoding="async"></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--gray" id="faq" aria-labelledby="faq-title">
+    <div class="container faq">
+      <div class="faq-head" data-reveal>
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h2" id="faq-title">Pertanyaan yang <span class="accent">sering diajukan.</span></h2>
+        <p class="lead">Belum menemukan jawabannya? Tanyakan langsung ke tim kami.</p>
+        <a class="btn btn--primary" href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20punya%20pertanyaan%20tentang%20Ando." target="_blank" rel="noopener"><svg class="i i-fill" aria-hidden="true"><use href="#i-wa"/></svg>Tanya via WhatsApp</a>
+      </div>
+      <div class="qa-list" data-reveal>
+        <details class="qa">
+          <summary>Apa itu Ando?<span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="qa-body">Ando, singkatan dari Aplikasi Nusantara Donasi Online, adalah platform fundraising white-label untuk yayasan, LAZ, dan lembaga filantropi. Website donasi tampil dengan nama, logo, warna, dan domain lembaga, sementara campaign, transaksi, dan data donatur dikelola dari satu dashboard.</div>
+        </details>
+        <details class="qa">
+          <summary>Apakah ada biaya selain langganan bulanan?<span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="qa-body">Ada biaya Setup &amp; Configuration sebesar Rp1.500.000 yang dibayar sekali di awal. Biaya pihak ketiga seperti payment gateway dan usage komunikasi (Meta / BSP, SMS, email) ditagihkan terpisah sesuai pemakaian.</div>
+        </details>
+        <details class="qa">
+          <summary>Bisa memakai domain lembaga sendiri?<span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="qa-body">Bisa. Custom domain tersedia di semua paket, termasuk Starter. Konfigurasi domain atau subdomain dikerjakan saat proses setup.</div>
+        </details>
+        <details class="qa">
+          <summary>Lembaga kami tidak punya tim IT. Bagaimana?<span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="qa-body">Tambahkan Managed IT Support (Rp1.500.000 per bulan). Kami menangani troubleshooting, user dan akses, domain, payment, tracking, investigasi transaksi bermasalah, serta koordinasi dengan provider. Fair use hingga 8 tiket atau sekitar 5 jam per bulan.</div>
+        </details>
+        <details class="qa">
+          <summary>Bagaimana dengan data donatur dari sistem lama?<span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="qa-body">Migrasi data berada di luar subscription dan dihitung sesuai scope. Untuk menggabungkan data dari beberapa sumber secara berkelanjutan, gunakan add-on Data Warehouse.</div>
+        </details>
+        <details class="qa">
+          <summary>Kami butuh fitur khusus. Apakah bisa?<span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="qa-body">Bisa melalui Custom Development tanpa mengubah core platform. Mulai Rp1,5–3 juta untuk enhancement sederhana, Rp3–7,5 juta untuk fitur lanjutan, dan mulai Rp7,5 juta untuk kebutuhan kompleks yang memerlukan technical assessment.</div>
+        </details>
+        <details class="qa">
+          <summary>Apa itu Sistem CRM Terintegrasi dan berapa minimal berlangganannya?<span class="pm"><svg class="i" aria-hidden="true"><use href="#i-plus"/></svg></span></summary>
+          <div class="qa-body">Sistem CRM Terintegrasi adalah layanan komunikasi WhatsApp resmi untuk broadcast, notifikasi transaksi, akad, dan update campaign berbasis segmen donatur. Biayanya Rp525.000 per bulan dengan minimal berlangganan 3 bulan, di luar biaya usage Meta / BSP.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta" aria-labelledby="cta-title" style="background:var(--surface-2)">
+    <div class="container">
+      <div class="cta-box" data-reveal="scale">
+        <div>
+          <p class="eyebrow">Mulai sekarang</p>
+          <h2 class="h2" id="cta-title">Saatnya kelola crowdfunding lembaga dengan Ando.</h2>
+          <p class="lead">Ceritakan kebutuhan lembaga Anda. Tim Gamatek akan menunjukkan platformnya, membantu memilih paket, dan menyiapkan langkah menuju go&#8209;live.</p>
+          <div class="cta-actions">
+            <a class="btn btn--white" href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20ingin%20menjadwalkan%20demo%20Ando%20untuk%20lembaga%20kami." target="_blank" rel="noopener"><svg class="i i-fill" aria-hidden="true"><use href="#i-wa"/></svg>Jadwalkan Demo</a>
+            <a class="btn btn--outline-light" href="mailto:hi@gamatek.co.id?subject=Jadwalkan%20Demo%20Ando&amp;body=Halo%20Tim%20Gamatek%2C%0A%0ASaya%20ingin%20menjadwalkan%20demo%20Ando%20untuk%20lembaga%20kami.%0A%0ANama%20lembaga%3A%0AKontak%3A%0AKebutuhan%20singkat%3A%0A"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>Kirim Email</a>
+          </div>
+        </div>
+        <div class="cta-contact">
+          <a href="https://wa.me/628112131550?text=Halo%20Gamatek%2C%20saya%20ingin%20menjadwalkan%20demo%20Ando%20untuk%20lembaga%20kami." target="_blank" rel="noopener">
+            <span class="ic"><svg class="i i-fill" aria-hidden="true"><use href="#i-wa"/></svg></span>
+            <span><small>WhatsApp</small><b>+62 811-2131-550</b></span>
+          </a>
+          <a href="mailto:hi@gamatek.co.id?subject=Jadwalkan%20Demo%20Ando">
+            <span class="ic"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><small>Email</small><b>hi@gamatek.co.id</b></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <a class="footer-brand" href="#top" aria-label="Ando, kembali ke atas">
+        <img src="/assets/brand/ando-mark-dark.svg" alt="" width="56" height="56" loading="lazy">
+        <span>Aplikasi Nusantara Donasi Online</span>
+      </a>
+      <nav class="footer-links" aria-label="Navigasi footer">
+        <a href="#platform">Fitur</a>
+        <a href="#harga">Harga</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#contoh">Contoh</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="socials">
+        <a href="https://www.instagram.com/gamatek.official" target="_blank" rel="noopener" aria-label="Instagram Gamatek"><svg class="i" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        <a href="https://wa.me/628112131550" target="_blank" rel="noopener" aria-label="WhatsApp Gamatek"><svg class="i i-fill" aria-hidden="true"><use href="#i-wa"/></svg></a>
+        <a href="mailto:hi@gamatek.co.id" aria-label="Email Gamatek"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy;<span id="year">2026</span> Gamatek. All rights reserved.</p>
+      <p class="footer-by">Dipasarkan, diimplementasikan, dan didukung oleh <img src="/assets/brand/gamatek-logo-white.svg" alt="Gamatek" width="102" height="21" loading="lazy"></p>
+    </div>
+  </div>
+  <div class="footer-word" aria-hidden="true">
+    <svg viewBox="-2 -45.5 181 33" preserveAspectRatio="xMidYMin meet" focusable="false">
+      <defs><linearGradient id="fw-fill" x1="0" y1="-45.5" x2="0" y2="-12.5" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#5B7CC2"/><stop offset=".55" stop-color="#2F4A8C"/><stop offset="1" stop-color="#0B1437"/></linearGradient></defs>
+      <path transform="scale(1.06 1)" d="M0.78 -0.00L15.33 -44.02L31.31 -44.02L46.34 -0.00L36.13 -0.00L23.94 -37.17L27.06 -35.91L19.31 -35.91L22.52 -37.17L10.67 -0.00ZM11.79 -10.93L14.82 -19.13L32.09 -19.13L35.12 -10.93ZM51.19 -0.00L51.19 -33.01L58.85 -33.01L58.85 -18.84L58.31 -18.84Q58.31 -23.92 59.63 -27.30Q60.95 -30.68 63.58 -32.37Q66.21 -34.07 70.02 -34.07L70.45 -34.07Q76.22 -34.07 79.28 -30.29Q82.34 -26.52 82.34 -18.89L82.34 -0.00L72.66 -0.00L72.66 -19.42Q72.66 -22.07 71.12 -23.74Q69.57 -25.42 66.89 -25.42Q64.17 -25.42 62.52 -23.72Q60.87 -22.02 60.87 -19.24L60.87 -0.00ZM103.84 1.09Q100.35 1.09 97.48 -0.18Q94.61 -1.45 92.52 -3.72Q90.42 -5.98 89.29 -9.04Q88.16 -12.11 88.16 -15.69L88.16 -17.05Q88.16 -20.62 89.24 -23.71Q90.31 -26.79 92.33 -29.10Q94.34 -31.42 97.18 -32.71Q100.02 -34.01 103.52 -34.01Q107.47 -34.01 110.37 -32.29Q113.27 -30.57 114.91 -27.23Q116.54 -23.88 116.70 -18.96L114.19 -21.33L114.19 -44.02L123.87 -44.02L123.87 -0.00L116.21 -0.00L116.21 -13.70L117.54 -13.70Q117.39 -8.98 115.61 -5.67Q113.83 -2.35 110.82 -0.63Q107.80 1.09 103.84 1.09ZM106.25 -6.96Q108.48 -6.96 110.33 -7.97Q112.17 -8.98 113.30 -10.92Q114.43 -12.86 114.43 -15.56L114.43 -17.79Q114.43 -20.43 113.27 -22.23Q112.11 -24.03 110.26 -24.99Q108.40 -25.96 106.23 -25.96Q103.81 -25.96 101.91 -24.75Q100.01 -23.53 98.92 -21.38Q97.84 -19.24 97.84 -16.37Q97.84 -13.51 98.93 -11.40Q100.02 -9.29 101.93 -8.13Q103.84 -6.96 106.25 -6.96ZM148.46 1.18Q144.10 1.18 140.73 -0.18Q137.35 -1.54 135.01 -3.90Q132.68 -6.26 131.47 -9.30Q130.26 -12.35 130.26 -15.74L130.26 -17.10Q130.26 -20.58 131.52 -23.68Q132.78 -26.77 135.15 -29.13Q137.51 -31.49 140.89 -32.84Q144.27 -34.19 148.46 -34.19Q152.69 -34.19 156.05 -32.84Q159.40 -31.49 161.77 -29.13Q164.14 -26.77 165.40 -23.68Q166.65 -20.58 166.65 -17.10L166.65 -15.74Q166.65 -12.35 165.45 -9.30Q164.24 -6.26 161.91 -3.90Q159.57 -1.54 156.19 -0.18Q152.82 1.18 148.46 1.18ZM148.46 -6.99Q151.26 -6.99 153.15 -8.21Q155.03 -9.42 156.00 -11.57Q156.98 -13.72 156.98 -16.42Q156.98 -19.22 155.97 -21.37Q154.97 -23.52 153.06 -24.77Q151.16 -26.02 148.46 -26.02Q145.78 -26.02 143.86 -24.77Q141.95 -23.52 140.94 -21.37Q139.94 -19.22 139.94 -16.42Q139.94 -13.72 140.91 -11.57Q141.89 -9.42 143.79 -8.21Q145.70 -6.99 148.46 -6.99Z" fill="url(#fw-fill)"/>
+    </svg>
+    <span class="footer-word-sheen"></span>
+  </div>
+</footer>
+
+
+<script src="/assets/js/ando.js" defer></script>
+</body>
+</html>
